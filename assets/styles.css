@@ -1,0 +1,115 @@
+/* DEFINE DEFAULT COLORS & STYLES */
+:root {
+    --background-color: #4274ad;
+    --font-color: #dedfc8;
+    --header-color: #dfd205;  
+    --button-color: #5F5F5B; 
+}
+
+body {
+    color: var(--font-color);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/* BEGIN HEADER STYLES */
+.header {
+    padding: 15px 35px;
+    background-color: var(--background-color);
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    position: -webkit-sticky;
+    position:sticky;
+    top: 0;
+    z-index: 9999;    
+}
+
+.header h1 {
+    font-family:lucida sans;
+    font-size: 120px;
+    font-style: italic;
+    align-items: center;
+    color: var(--header-color);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header a {
+    text-decoration: none;
+    color: var(--font-color);
+    justify-content: center;
+}
+
+.header nav {
+    text-align: center;
+    margin: 7px 0;
+}
+
+.header nav ul {
+    color: var(--font-color);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+.header nav ul li {
+    padding: 5px 120px;
+    text-decoration-color: var(--font-color);
+    font-size: 15px
+}
+
+.header nav ul li:hover {
+    background: var(--button-color);
+    color: var(--font-color);
+    border-radius: 15px;
+    text-shadow: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (min-width: 575px) {
+    /* this will be applied on any screen smaller than 575px */
+
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (min-width: 768px) {
+     /* this will be applied on any screen between 768px and 575px */
+
+}
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+     /* this will be applied on any screen smaller than 980px */
+     header {
+        padding-bottom: 0;
+        justify-content: center;
+      }
+    
+      header h1 {
+        width: 100%;
+        text-align: center;
+      }
+}
