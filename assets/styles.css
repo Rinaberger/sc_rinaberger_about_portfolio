@@ -19,12 +19,9 @@ body {
 
 /* BEGIN HEADER STYLES */
 .header {
-    padding: 35px 20px;
+    padding: 10px 0px;
     background-color: var(--background-color);
     background-size: cover;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap:wrap;
     position: -webkit-sticky;
     position:sticky;
     top: 0;
@@ -33,12 +30,14 @@ body {
 
 .header h1 {
     font-family:lucida sans;
-    font-size: 30px;
+    font-size: 45px;
     font-style: italic;
     text-align: center;
     color: var(--header-color);
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
+    flex:auto;
 }
 
 .header a {
@@ -48,23 +47,28 @@ body {
 }
 
 .header nav {
-    text-align: center;
-    margin: 7px 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex: auto;
+    justify-content: center;
 }
 
 .header nav ul {
     color: var(--font-color);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
     align-items: center;
     list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex: auto;
+    justify-content: center;
 }
 
 .header nav ul li {
-    padding: 5px 120px;
+    padding: 5px 80px;
     text-decoration-color: var(--font-color);
-    font-size: 15px
+    font-size: 25px;
+    text-decoration: underline;
 }
 
 .header nav ul li:hover {
@@ -82,35 +86,68 @@ body {
 
 
 
-
-
-
-
-
-
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 435px) {
  
-    /* this will be applied on any screen between 768px and 980px */
+    /* this will be applied on any screen between 435px and 685px */
 
-    .header h1 {
-        font-size: 70px;
-        text-align: center;        
+    .header nav ul {
+        flex-direction: column;
+        flex: auto;
+        justify-content: center;
     }
-
-
 }
 
 
-
-/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
-@media screen and (min-width: 980px) {
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (min-width: 685px) {
  
-    /* this will be applied on any screen larger than 980px */
-
+    /* this will be applied on any screen between 685px and 812px */
+    
     .header h1 {
-        margin-left: 80px;
-        font-size: 110px;        
+        font-size: 70px;
+        text-align: center;               
     }
 
+    .header nav ul {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        flex: auto;
+    }
+
+    .header nav ul li {
+        padding: 20px;
+    }
+}
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (min-width: 812px) {
+ 
+    /* this will be applied on any screen larger than 812px */
+
+    .header h1 {
+        font-size: 70px;
+        flex-wrap: wrap; 
+        padding: 10px, 10px;      
+    }
+
+    .header nav ul {
+        justify-content: space-around;        
+    }
+
+}
+
+ /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (min-width: 850px) {
+ 
+    /* this will be applied on any screen larger than 850px */   
+
+    .header h1 {
+        font-size: 95px;
+    }
+
+    .header nav ul li {
+        font-size: 25px;
+    }
 }
