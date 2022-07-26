@@ -22,11 +22,7 @@ body {
 .header {
     padding: 10px 0px;
     background-color: var(--background-color);
-    background-size: cover;
-    position: -webkit-sticky;
-    position:sticky;
-    top: 0;
-    z-index: 9999;    
+    background-size: cover;        
 }
 
 .header h1 {
