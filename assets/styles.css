@@ -149,9 +149,39 @@ body {
 
 .scottimage img {
     display: inline-block;
-    width: 50%; 
-      
+    width: 50%;    
 }
+
+.brands {
+    width: 100%;
+    margin:0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.brand {
+    margin: 20px;
+    flex: 1;
+}
+
+.brand img {
+    width: 50%;
+}
+
+.brand h3 {
+    text-align: center;
+    padding:25px;
+}
+
+.owned-brand img {
+    width: 50%;
+    padding: 20px 15px;
+}
+
+
+
+
 
 
 
@@ -196,7 +226,7 @@ body {
         padding: 20px;
     }
 
-    .section-header {
+        .section-header {
         justify-content: left;
         margin: 0px 30px;
     }
@@ -212,6 +242,10 @@ body {
         float: left; 
         width: 19%;
         padding-top: 0px;
+    }
+
+    .brands {
+        flex-direction: column;
     }
 }
 
@@ -230,7 +264,7 @@ body {
         justify-content: space-around;        
     }
 
-}
+    }
 
  /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (min-width: 850px) {
@@ -245,7 +279,20 @@ body {
         font-size: 25px;
     }
 
+    .hero div h2 {
+        font-size: 75px;
+    }
+
     .section-header {
         margin: 0px 0px;
     }
+
+    .brand img {
+        width: 33%;
+    }
+
+    .flex-row img {
+        width: 40%;
+    }
+
 }
