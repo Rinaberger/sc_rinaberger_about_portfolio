@@ -12,3 +12,9 @@ PURPOSE: This webpage was designed for potential employers and/or customers to b
 
     DESIGN:
         -- Base CSS code is designed with mobile-first approach. Media Screen breaks are at 435px, 685px, 812px, and 850px for aesthetic purposes to provide balance to the user experience. 
+
+
+
+
+Image Credits:
+    -- hero image acquired thru canva.com
