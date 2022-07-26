@@ -1,9 +1,10 @@
 /* DEFINE DEFAULT COLORS & STYLES */
 :root {
-    --background-color: #4274ad;
-    --font-color: #dedfc8;
-    --header-color: #dfd205;  
-    --button-color: #5F5F5B; 
+    --background-color:  rgb(94, 122, 124);
+    --font-color: hsl(60, 2%, 77%);
+    --header-color: white;
+    --button-color: hwb(180 46% 31%); 
+    --text-color: white;
 }
 
 body {
@@ -67,7 +68,7 @@ body {
 .header nav ul li {
     padding: 5px 80px;
     text-decoration-color: var(--font-color);
-    font-size: 25px;
+    font-size: 15px;
     text-decoration: underline;
 }
 
@@ -77,6 +78,26 @@ body {
     border-radius: 15px;
     text-shadow: none;
 }
+
+.hero {
+    background-image: url("../assets/images/Bio_Hero.png");
+    background-size: cover;
+    padding: 45px;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex: auto;
+}
+
+.hero div h2 {
+    font-size: 45px;
+    flex-direction: column;
+    text-align: center;
+    color: var(--text-color);
+}
+
 
 
 
