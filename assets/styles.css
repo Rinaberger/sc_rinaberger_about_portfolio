@@ -87,7 +87,7 @@ body {
 }
 
 .hero div h2 {
-    font-size: 45px;
+    font-size: 35px;
     flex-direction: column;
     text-align: center;
     color: var(--text-color);
@@ -210,7 +210,29 @@ body {
 
 .learnmore img:hover {
     transform: scale(1.15);
+}/* BEGIN HEADER STYLES */
+.footer {
+    padding: 10px 0px;
+    background-color: var(--background-color);
+    background-size: cover;        
 }
+
+.footer h4 {
+    text-align: center;
+    color: var(--text-color);
+}
+
+.footer p {
+    text-align: center;
+    color: var(--text-color);
+}
+
+.footer div {
+    display: block;
+    text-align: center;
+}
+
+
 
 
 
@@ -304,7 +326,7 @@ body {
     }
 
     .hero div h2 {
-        font-size: 75px;
+        font-size: 60px;
     }
 
     
