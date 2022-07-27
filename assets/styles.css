@@ -208,25 +208,9 @@ body {
     padding: 15px;
 }
 
-.learnmore a {
-    background-color: var(--text-color);
-    color: var(--background-color);
-    text-decoration: none;
-    width: 50%;
-    border-radius: 15px;
-    font-size: 30px;   
-    padding: 5px; 
+.learnmore img:hover {
+    transform: scale(1.15);
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -329,8 +313,8 @@ body {
         width: 33%;
     }
 
-    .flex-row img {
-        width: 40%;
+    .owned-brand img {
+        width: 25%;
     }
 
 }
